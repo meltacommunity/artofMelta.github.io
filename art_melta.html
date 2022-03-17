@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Art Melta</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("img1.jpg");
+  min-height: 100%;
+}
+
+.menu {
+  display: none;
+}
+
+</style>
+</head>
+
+<body>
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">CONTACT</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <!-- <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Bắt đầu từ 9am đến 5pm</span>
+  </div> -->
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">art<br>melta</span>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">VỀ CHÚNG MÌNH</span></h5>
+    <p>Art Melta được dẫn dắt bởi Thành Brow với chủ đề nghệ thuật, một trong hai lĩnh vực mà Melta đang phát triển, và nội dung chính tập trung vào Hà Nội cổ dưới góc nhìn của thế hệ mới. Nội dung về Hà Nội ở đây không chỉ bao gồm phong  cảnh thiên nhiên, mà còn có cảnh sinh hoạt đời sống thường ngày của con người, ẩm thực, hoặc những nét đặc trưng riêng mà không nơi nào có.</p>
+
+    <p>Bên cạnh ảnh về chủ đề Hà Nội, chúng mình còn chia sẻ những câu chuyện, bài thơ hay đoạn văn chứa những cảm xúc đặc biệt do người viết cảm nhận và ghi chép lại.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"Những góc dịu dàng ấy của Hà Nội cứ lặng lẽ nuôi lớn tình yêu thành phố trong mỗi tâm hồn để đi xa thấy nhớ, gần thêm yêu bởi luôn có một nhẹ nhàng, sâu lắng..."</i></p>
+      <p>Nhiếp ảnh gia Art Melta: Vũ Tiến Thành</p>
+    </div>
+    <img src="img10.JPG" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Giờ hoạt động:</strong> hàng ngày từ 9am đến 5pm.</p>
+    <p><strong>Địa chỉ:</strong> 47 Lý Thường Kiệt, Hoàn Kiếm, Hà Nội</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">NỘI DUNG</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pics');" id="myLink">
+        <div class="w3-col s6 tablink">Ảnh</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Posts');">
+        <div class="w3-col s6 tablink">Bài viết</div>
+      </a>
+    </div>
+
+    <div id="Pics" class="w3-container menu w3-padding-48 w3-card">
+      <h5><a href="art_melta_pics_only.html">Kiến trúc</a></h5>
+      <p class="w3-text-grey">Bạn có biết Hà Nội khoác lên mình vẻ đẹp của kiến trúc thời Pháp thuộc? </p><br>
+    
+      <h5><a href="art_melta_pics_only.html">Phong cảnh</a></h5>
+      <p class="w3-text-grey">Có biết bao cảnh đẹp đến mức thu hút từ thế hệ cũ đến thế hệ mới</p><br>
+    
+      <h5><a href="art_melta_pics_only.html">Ẩm thực</a></h5>
+      <p class="w3-text-grey">Hãy tận dụng ngày nghỉ cuối tuần để thưởng thức ẩm thực đường phố Hà Nội</p><br>
+    
+      <h5><a href="art_melta_pics_only.html">Đời sống</a></h5>
+      <p class="w3-text-grey">Thói quen đọc báo đứng sau buổi đi bộ thể dục sáng tại Hồ Gươm vẫn tồn tại</p><br>
+    
+      <h5><a href="art_melta_pics_only.html">Văn hóa</a></h5>
+      <p class="w3-text-grey">Trà đá vỉa hè, nét đẹp văn hóa đặc trưng không nơi nào có</p>
+    </div>
+
+    <div id="Posts" class="w3-container menu w3-padding-48 w3-card">
+      <h5><a href="art_melta_pics.html">Hồ Tây, vẻ đẹp riêng của thủ đô</a></h5>
+      <p class="w3-text-grey">Địa điểm không thể bỏ qua khi đi cùng người yêu</p><br>
+    
+      <h5><a href="art_melta_pics.html">Việt Đức trong tôi là</a></h5>
+      <p class="w3-text-grey">Những buổi trưa hè trốn học chơi bóng rổ</p><br>
+    
+      <h5><a href="art_melta_pics.html">Cà phê và báo giấy</a></h5>
+      <p class="w3-text-grey">Thức quà sớm của người Hà Nội xưa</p><br>
+    
+      <h5><a href="art_melta_pics.html">Chợ hoa Quảng An</a></h5>
+      <p class="w3-text-grey">Nơi bạn không thể mua hoa vào ban ngày</p><br>
+    
+      <h5><a href="art_melta_pics.html">36 phố phường</a>    </h5>
+      <p class="w3-text-grey">Khi nét đẹp cổ quyến rũ thế hệ mới</p>
+    </div>  
+    <img src="img9.JPG" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">BẠN CÓ THỂ TÌM THẤY CHÚNG TỚ Ở ĐÂU?</span></h5>
+    <p>Bất cứ đâu ở trên phố, chúng tớ sẽ up thông báo chủ đề trước khi chụp để các bạn có thể qua giao lưu.</p>
+    <img src="img11.JPG" class="w3-image" style="width:100%">
+
+    <p><span class="w3-tag">HEY!</span> Chúng tớ rất vui nếu bạn có khả năng chụp ảnh và thể tham gia cùng bọn mình, tác phẩm của bạn có thể được đưa lên trưng bày và ghi tên đầy đủ, đặc biệt các bạn sẽ được ưu tiên hơn nếu các bạn có một tình yêu to lớn dành cho Hà Nội.</p>
+    <p><strong>Tham gia</strong> cùng chúng tớ hoặc muốn tác phẩm của bạn được trưng bày lên, hãy điền thông tin vào đây nhé:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Tên đầy đủ" required name="Tên"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Số điện thoại" required name="Số điện thoại"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Lời nhắn hoặc yêu cầu" required name="Lời nhắn"></p>
+      <p><button class="w3-button w3-black" type="submit">SEND</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Designed by <a href="" title="W3.CSS" target="_blank" class="w3-hover-text-green">Art Melta</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
